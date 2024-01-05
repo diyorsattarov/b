@@ -1,11 +1,11 @@
-# postgres-rest-service
+# beastgres-app
 
 ## Introduction
-`fullstack-beastgres-app` is a comprehensive demonstration of a full-stack application integrating a REST API with PostgreSQL database interaction and an Express.js backend. This project showcases efficient database management using the libpq library, robust SQL utilization, and containerization with Docker for both backend services and the frontend server.
+`beastgres-app` is a comprehensive demonstration of a full-stack application integrating a REST API with PostgreSQL database interaction and an Express.js backend. This project showcases efficient database management using the libpq library, robust SQL utilization, and containerization with Docker for both backend services and the frontend server.
 
 ## Directory Structure
 ```
-~/ (fullstack-beastgres-app)
+~/ (beastgres-app)
 |-- boostbase/
 |-- Dockerfile 
 |-- beastgres/ 
