@@ -1,11 +1,11 @@
 # postgres-rest-service
 
 ## Introduction
-`postgres-rest-service` is a minimal yet robust demonstration of a REST API utilizing the libpq library for PostgreSQL database interaction. This project highlights efficient database management, SQL utilization, and containerization with Docker.
+`fullstack-beastgres-app` is a comprehensive demonstration of a full-stack application integrating a REST API with PostgreSQL database interaction and an Express.js backend. This project showcases efficient database management using the libpq library, robust SQL utilization, and containerization with Docker for both backend services and the frontend server.
 
 ## Directory Structure
 ```
-~/ (postgres-rest-service)
+~/ (fullstack-beastgres-app)
 |-- boostbase/
 |-- Dockerfile 
 |-- beastgres/ 
@@ -13,6 +13,12 @@
 | |-- CMakeLists.txt
 | |-- *.cpp (C++ files) 
 | |-- *.sql (SQL scripts) 
+|-- express/
+| |-- Dockerfile
+| |-- package.json
+| |-- *.js (JavaScript files)
+| |-- public/
+| |-- views/
 `-- Docker-compose.yaml
 ```
 
@@ -29,5 +35,6 @@
 - **REST API:** Efficient handling of HTTP requests with a focus on CRUD operations.
 - **Database Interaction:** Usage of the libpq library for PostgreSQL, demonstrating database connection, querying, and transaction management.
 - **SQL and PostgreSQL:** Application of SQL scripts for database schema creation and management.
+- **User Registration:** Successfully registers new users through the Express.js server, communicating with the PostgreSQL database.
 - **Dockerization:** Each component (REST API and PostgreSQL database) is containerized for easy deployment and scalability.
 
