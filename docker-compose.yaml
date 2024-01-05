@@ -1,0 +1,24 @@
+version: '3'
+services:
+  express:
+    build: ./express
+    ports:
+      - "3000:3000"
+  beastgres:
+    build: ./beastgres
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  postgres-data:
